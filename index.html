@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Ativiza: plataforma de gestão financeira para microinvestidores. Controle de empréstimos, análise de inadimplência, fluxo de caixa e rentabilidade com inteligência artificial. Fintech para investidores ativos. Em breve.">
-  <meta name="keywords" content="microinvestidor, gestão de empréstimos, controle financeiro, análise de inadimplência, fluxo de caixa, rentabilidade, investimentos alternativos, crédito P2P, gestão de ativos, IA financeira, fintech investidor, planejamento financeiro, renegociação de dívidas, análise de risco, aplicações financeiras, micro-investor, loan management, financial control, default analysis, cash flow, fintech">
+  <meta name="keywords" content="microinvestidor, gestão de empréstimos, controle financeiro, análise de inadimplência, alertas de atraso, fluxo de caixa, rentabilidade, investimentos alternativos, crédito P2P, gestão de ativos, IA financeira, fintech investidor, planejamento financeiro, renegociação de dívidas, análise de risco, aplicações financeiras, micro-investor, loan management, financial control, default analysis, payment alerts, cash flow, fintech">
   <meta name="author" content="Ativiza">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://ativiza.com.br/">
@@ -70,7 +70,6 @@
           <li><a href="#solucao" class="nav-link" data-i18n="nav.solution">A solução</a></li>
           <li><a href="#preview" class="nav-link" data-i18n="nav.preview">Plataforma</a></li>
           <li><a href="#recursos" class="nav-link" data-i18n="nav.features">Recursos</a></li>
-          <li><a href="#contato" class="nav-link" data-i18n="nav.contact">Contato</a></li>
         </ul>
       </nav>
       <div class="header-actions">
@@ -86,7 +85,7 @@
   <main id="main" class="main" role="main">
     <!-- Hero -->
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-bg" aria-hidden="true" role="img" aria-label="Visual temático: gestão financeira e microinvestidor"></div>
       <div class="container hero-inner">
         <p class="hero-badge animate-in" data-i18n="hero.badge">Em desenvolvimento · Em breve</p>
         <h1 id="hero-title" class="hero-title animate-in">
@@ -97,14 +96,8 @@
           Centralize empréstimos, ativos e decisões financeiras. Use dados e IA para se tornar um gestor financeiro de verdade — sem planilhas, sem caos.
         </p>
         <div class="hero-cta animate-in">
-          <a href="#contato" class="btn btn-primary" data-i18n="hero.cta">Quero ser avisado no lançamento</a>
+          <a href="#preview" class="btn btn-primary" data-i18n="hero.cta">Conheça a plataforma</a>
         </div>
-      </div>
-      <div class="hero-visual animate-in">
-        <figure class="hero-preview">
-          <img src="public/assets/preview/inicio.png" alt="Tela inicial da plataforma Ativiza - painel de gestão para microinvestidores" width="800" height="450" loading="eager" class="hero-preview-img">
-          <figcaption class="visually-hidden">Preview da plataforma Ativiza: gestão de empréstimos e ativos</figcaption>
-        </figure>
       </div>
     </section>
 
@@ -117,15 +110,15 @@
           <div class="carousel-viewport">
             <div class="carousel-track" aria-live="polite">
               <figure class="carousel-slide" aria-roledescription="slide" aria-label="Tela inicial e painel">
-                <img src="public/assets/preview/inicio.png" alt="Tela inicial - painel de gestão financeira Ativiza" width="400" height="225" loading="lazy">
+                <img src="public/assets/preview/inicio.png" alt="Tela inicial - painel de gestão financeira Ativiza" width="270" height="480" loading="lazy">
                 <figcaption data-i18n="preview.cap1">Tela inicial e painel</figcaption>
               </figure>
               <figure class="carousel-slide" aria-roledescription="slide" aria-label="Opções e configurações">
-                <img src="public/assets/preview/Options.png" alt="Opções e configurações da plataforma de gestão financeira" width="400" height="225" loading="lazy">
+                <img src="public/assets/preview/Options.png" alt="Opções e configurações da plataforma de gestão financeira" width="270" height="480" loading="lazy">
                 <figcaption data-i18n="preview.cap2">Opções e configurações</figcaption>
               </figure>
               <figure class="carousel-slide" aria-roledescription="slide" aria-label="Experiência do app">
-                <img src="public/assets/preview/Splash%20Screen.png" alt="Splash screen Ativiza - aplicativo para microinvestidores" width="400" height="225" loading="lazy">
+                <img src="public/assets/preview/Splash%20Screen.png" alt="Splash screen Ativiza - aplicativo para microinvestidores" width="270" height="480" loading="lazy">
                 <figcaption data-i18n="preview.cap3">Experiência do app</figcaption>
               </figure>
             </div>
@@ -172,6 +165,10 @@
           <li class="problem-item animate-in">
             <span class="problem-icon icon-wrap" aria-hidden="true"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#icon-calendar"/></svg></span>
             <span data-i18n="problem.5">Falta de previsibilidade de fluxo de caixa e retorno</span>
+          </li>
+          <li class="problem-item animate-in">
+            <span class="problem-icon icon-wrap" aria-hidden="true"><svg class="icon" width="24" height="24" aria-hidden="true"><use href="#icon-bell"/></svg></span>
+            <span data-i18n="problem.6">Sem alertas de atraso: cliente atrasa e você só descobre depois</span>
           </li>
         </ul>
         <p class="problem-note" data-i18n="problem.note">
@@ -239,9 +236,12 @@
             <span class="feature-icon icon-wrap" aria-hidden="true"><svg class="icon" width="28" height="28" aria-hidden="true"><use href="#icon-cpu"/></svg></span>
             <h3 data-i18n="feature3">Análise de risco e projeções com IA</h3>
           </li>
-          <li class="feature-item animate-in">
+          <li class="feature-item feature-item-highlight animate-in">
             <span class="feature-icon icon-wrap" aria-hidden="true"><svg class="icon" width="28" height="28" aria-hidden="true"><use href="#icon-bell"/></svg></span>
-            <h3 data-i18n="feature4">Alertas e previsibilidade de fluxo de caixa</h3>
+            <div class="feature-content">
+              <h3 data-i18n="feature4">Alertas de atraso e inadimplência</h3>
+              <p class="feature-desc" data-i18n="feature4.desc">Avisos de pagamentos em atraso, vencimentos próximos e clientes em risco. Nunca perca o controle.</p>
+            </div>
           </li>
           <li class="feature-item animate-in">
             <span class="feature-icon icon-wrap" aria-hidden="true"><svg class="icon" width="28" height="28" aria-hidden="true"><use href="#icon-target"/></svg></span>
@@ -251,22 +251,7 @@
       </div>
     </section>
 
-    <!-- CTA -->
-    <section id="contato" class="section section-cta" aria-labelledby="cta-title">
-      <div class="container">
-        <h2 id="cta-title" class="section-title cta-title" data-i18n="cta.title">Em breve no mercado</h2>
-        <p class="cta-desc" data-i18n="cta.desc">
-          Estamos construindo a plataforma. Cadastre-se para ser avisado no lançamento e ter acesso antecipado.
-        </p>
-        <form class="cta-form" action="#" method="post" aria-label="Cadastro para aviso de lançamento">
-          <label for="email" class="visually-hidden" data-i18n="cta.label">Seu melhor e-mail</label>
-          <input type="email" id="email" name="email" class="cta-input" placeholder="seu@email.com" data-i18n="cta.placeholder" required autocomplete="email">
-          <button type="submit" class="btn btn-primary cta-btn" data-i18n="cta.button">Avise-me</button>
-        </form>
-        <p class="cta-note" data-i18n="cta.note">Sem spam. Apenas uma mensagem quando lançarmos.</p>
-      </div>
-    </section>
-  </main>
+    </main>
 
   <footer class="footer" role="contentinfo">
     <div class="container footer-inner">
